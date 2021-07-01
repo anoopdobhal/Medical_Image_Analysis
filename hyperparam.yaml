@@ -1,0 +1,14 @@
+trainingInput:
+    scaleTier: STANDARD_1
+    hyperparameters:
+        hyperparameterMetricTag: accuracy
+        goal: MAXIMIZE
+        maxTrials: 20
+        maxParallelTrials: 5
+        enableTrialEarlyStopping: True
+        params:
+        - parameterName: batch_size
+          type: INTEGER
+          minValue: 8
+          maxValue: 512
+          scaleType: UNIT_LOG_SCALE
